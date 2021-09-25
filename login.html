@@ -1,0 +1,174 @@
+<html>
+  <head>
+       <title>LOGIN TO ARCOUS</title>
+       <div class="menu">
+         <div class="leftmenu">
+           <br>&nbsp;</br>
+            <h6>ARCOUS TECHNOLOGIES</h6>
+          </div>
+       <div class ="rightmenu">
+       <ul>
+         <li><a href="index.html"> HOME </a></li>
+         <li> Services </li>
+         <li> Works </li>
+         <li> About </li>
+         <li> Blogs</li>
+       </ul>
+       </div>
+       </div>
+
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+      }
+
+      a{
+          color:white;
+          text-decoration:none;
+
+      }
+
+    body{
+         background-image: url("pic/road.jpg");
+         background-size: 100% 100%;
+         background-position:fixed;
+        }
+
+        .leftmenu{
+          color:white;
+          margin-left:30px;
+          font-weight: bold;
+        }
+
+        .leftmenu h6{
+          font-style:arial;
+          font-size:30px;
+        }
+
+        .menu{
+          width: 100%;
+          height: 90px;
+          background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .rightmenu{
+          width:75%;
+          height: 100px;
+          float: right;
+        }
+        .rightmenu ul{
+          margin-top:-50px;
+          margin-left: 380px;
+        }
+
+        .rightmenu ul li {
+                          font-family: 'Montserrat',sans-serif;
+                          display: inline-block;
+                          list-style: none;
+                          font-size: 15px;
+                          color:white;
+                          font-weight: bold;
+                          line-height: 100px;
+                          margin-left: 40px;
+                          text-transform: uppercase;
+
+
+                          }
+
+        .login_form{
+          background-color:rgba(0,0,0,0.3);
+          width:250px;
+          height:340px;
+          padding:40px;
+          margin-top:70px;
+          border-radius:12px;
+          position:absolute:
+          float:right;
+          right:500px;
+          top:100px;
+          font-weight:20;
+          color:white;
+          font-size:14px;
+        }
+        .cpy{
+          position:absolute;
+          margin-left:1140px;
+          color:white;
+          bottom:10px;
+
+        }
+        .login
+        {
+          width:150px;
+          height:40px;
+          margin-top:20px;
+          margin-left:10px;
+          border-radius:5px;
+          background-color:rgba(0,0,0,0.5);
+          color:white;
+        }
+        .button{
+          border-radius:5px;
+          height:30px;
+          width:250px;
+          background-color:#87ceeb;
+          margin-left:10px;
+          margin-top:10px;
+          font-weight:200;
+          color:white;
+        }
+          .label{
+            margin-left:10px;
+            font-size:22px;
+          }
+          .fgpass{
+            margin-left:10px;
+          }
+
+  </style>
+  </head>
+  <center><body>
+    <div class="login_form">
+      <div class="label">
+    ARCOUS   LOGIN   PANEL</div>
+      <br>&nbsp;</br>
+      <form>
+
+        <h9>USERNAME:<input class="login" type="text" placeholder="    Enter Username" id="text1"></input></h9>
+        <br>&nbsp;</br>
+        <p>PASSWORD:<input class="login" type="password" placeholder="    Enter Password" id="text2"></input></p>
+        <br>&nbsp;</br>
+        <input type="checkbox" id="mycheck" onclick="myFunction()">  I agree the <a href="index.html">terms and conditions</a>
+        <input class="button" type="button" value="Signin" onclick="javascript:validate()"/>
+        <br>&nbsp</br>
+      <div class="fgpass" >
+        Forget Password | <a href="reg.html" >Create an Account</a>
+      </div>
+        </form>
+        <script type="text/javascript">
+          function myFunction() {
+            var checkBox = document.getElementById("mycheck");
+            if (checkBox.checked == false){
+                alert("Accept the Terms and conditions");
+                } else {
+
+                }
+              }
+          function validate()
+           { if(document.getElementById("text1").value=="Admin"
+            &&document.getElementById("text2").value=="12345")
+           {
+           alert("validation passed");
+           location.href="index.html";
+           }
+            else{
+                alert("validation failed");
+            }
+           }
+        </script>
+  </body></center>
+<bottom>
+  <div class="cpy">Design and Copyright to Konen</div>
+  </bottom>
+</html>
